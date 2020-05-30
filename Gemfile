@@ -16,6 +16,7 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'simple_token_authentication'
 gem 'warden'
 gem 'responders'
 # Use Active Storage variant
