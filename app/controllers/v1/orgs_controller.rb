@@ -1,15 +1,16 @@
 class V1::OrgsController < ApplicationController
     def index
+        
         @orgs = Org.all
 
-        render json: @orgs, status: :ok 
+        render :index, status: :ok 
     end
 
     def create 
         @org = Org.new(org_params)
 
         @org.save
-        render json: @org, status: :created
+        render :create , status: :created
     end
 
 
